@@ -1,8 +1,8 @@
-import { useState, ChangeEvent, MouseEvent } from 'react';
+import { useState, ChangeEvent} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, Auth } from 'firebase/auth';
 import { auth } from '../firebase';
-import { UserData } from '../providers/UserProvider';
+// import { UserData } from '../providers/UserProvider';
 
 interface FormValues {
     email: string;
