@@ -2,6 +2,7 @@ import { useState, ChangeEvent} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, Auth } from 'firebase/auth';
 import { auth } from '../firebase';
+import './stylesheets/Login.scss';
 // import { UserData } from '../providers/UserProvider';
 
 interface FormValues {
@@ -35,19 +36,20 @@ const Login: React.FC = () => {
 
     return (
         <div className='login'>
-        <div className='inner'>
-            <h1>Kaijo Biology Club</h1>
-            <p>Email</p>
-            <input type='text' name='email' placeholder='mail@addres.com' onChange={handleChange} />
-            <p>Password</p>
-            <input type='password' name='password' placeholder='' onChange={handleChange} />
-            <br />
-            <button className='login-button' onClick={signIn}>
-            Sign in
-            </button>
-            <p>アカウントをお持ちではないですか?</p>
-            <NavLink to={'/signup'}>アカウントを作成</NavLink>
-        </div>
+            <div className='inner'>
+                <h1>Kaijo Biology Club</h1>
+                <p className='warning'>{warning}</p>
+                <p>Email</p>
+                <input type='text' name='email' placeholder='mail@addres.com' onChange={handleChange} />
+                <p>Password</p>
+                <input type='password' name='password' placeholder='' onChange={handleChange} />
+                <br />
+                <button className='login-button' onClick={signIn}>
+                Sign in
+                </button>
+                <p>アカウントをお持ちではないですか?</p>
+                <NavLink to={'/signup'}>アカウントを作成</NavLink>
+            </div>
         </div>
     );
 };

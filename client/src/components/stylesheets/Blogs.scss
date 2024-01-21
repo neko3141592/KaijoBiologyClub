@@ -1,7 +1,7 @@
 @use './color';
 
 .blogs{
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     height: 100vh;
     background-color: #FFFFFF;
@@ -12,7 +12,7 @@
         width: 95%;
         margin: 120px auto;
         h1{
-            border-left: solid 10px color.$mainGreen;
+            border-left: solid 10px color.$mainGray;
             padding-left: 5px;
         }
     }

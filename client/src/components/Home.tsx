@@ -32,13 +32,12 @@ const Home:React.FC = () => {
                 <hr />
                 <div className='twitter'>
                     <h1>X(Twitter)</h1>
-                    {/* <Timeline
-                    dataSource={{
-                        sourceType: 'profile',
-                        screenName: 'K__Biology'
-                    }}
-                    >
-                    </Timeline> */}
+                    <Timeline
+                        dataSource={{
+                            sourceType: 'profile',
+                            screenName: 'K__Biology'
+                        }}
+                    />
                 </div>
                 
             </div>
