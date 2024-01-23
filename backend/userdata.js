@@ -10,6 +10,8 @@ router.post('/create' , async(req , res) => {
     .add({
         email:email,
         username:username,
+        admin:false,
+        profile:'',
     })
     .then((doc) => {
         res.sendStatus(200);

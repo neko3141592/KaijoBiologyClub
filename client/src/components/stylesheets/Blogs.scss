@@ -15,5 +15,16 @@
             border-left: solid 10px color.$mainGray;
             padding-left: 5px;
         }
+        input {
+            height: 40px;
+            width: 300px;
+            font-size: 18px;
+            background-color: white;
+            outline: none;
+            border: solid 3px color.$rightGray;
+            border-radius: 20px;
+            padding: 0 10px;
+            font-family: "M PLUS Rounded 1c" , sans-serif;
+        }
     }
 }

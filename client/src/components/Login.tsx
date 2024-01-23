@@ -5,7 +5,7 @@ import { auth } from '../firebase';
 import './stylesheets/Login.scss';
 // import { UserData } from '../providers/UserProvider';
 
-interface FormValues {
+type FormValues = {
     email: string;
     password: string;
 }
@@ -45,7 +45,7 @@ const Login: React.FC = () => {
                 <input type='password' name='password' placeholder='' onChange={handleChange} />
                 <br />
                 <button className='login-button' onClick={signIn}>
-                Sign in
+                Login
                 </button>
                 <p>アカウントをお持ちではないですか?</p>
                 <NavLink to={'/signup'}>アカウントを作成</NavLink>
