@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Login from './components/Login';
 import Blogs from './components/Blogs';
 import SignUp from './components/SignUp';
+import Notfound from './components/Notfound';
+import About from './components/About';
 
 const Router:React.FC = () => {
     return (
@@ -15,7 +17,9 @@ const Router:React.FC = () => {
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/login'} element={<Login/>}/>
                     <Route path={'/blogs'} element={<Blogs/>}/>
-                    <Route path={'/signup'} element={<SignUp/>} />
+                    <Route path={'/signup'} element={<SignUp/>}/>
+                    <Route path={'/about'} element={<About/>}/>
+                    <Route path={'/*'} element={<Notfound/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
